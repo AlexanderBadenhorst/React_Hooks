@@ -1,10 +1,11 @@
 import React from "react";
-import UserForm from "./UserForm";
+import "bootstrap/dist/css/bootstrap.min.css";
+import GitHub from "./GitHub";
 
 function App() {
   return (
     <div>
-      <UserForm/>
+      <GitHub />
     </div>
   );
 }
