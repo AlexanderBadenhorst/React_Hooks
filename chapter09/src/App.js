@@ -1,26 +1,24 @@
 import React, { createContext, useContext, useReducer } from "react";
 import ToDoList from "./ToDoList";
-import { v4 as uuidv4 } from "uuid";
 // import { UserContext } from "./index";
 // import { Button } from "react-bootstrap";
 
 const todosinitialState = {
-  todos: [
-    { id: 1, text: "finishing writing hooks chapter" },
-    { id: 2, text: "play with kids" },
-    { id: 3, text: "read bible" },
-  ],
+  todos: [],
 };
 
 function todosReducer(state, action) {
   switch (action.type) {
     /************CREATING************/
     case "add":
-      const newToDo = { id: uuidv4(), text: action.payload };
       // add new todo onto array
-      const addedToDos = [...state.todos, newToDo];
+      const addedToDos = [...state.todos, action.payload];
       // spread our state and assign todos
       return { ...state, todos: addedToDos };
+
+    /************READING************/
+    case "get":
+      return { ...state, todos: action.payload };
 
     /************UPDATING************/
     case "edit":

@@ -1,0 +1,20 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "text": "Complete react hooks book"
+    },
+    {
+      "id": "2",
+      "text": "Go to the gym"
+    },
+    {
+      "id": "3",
+      "text": "Read your bible!"
+    },
+    {
+      "id": "b5969b43-0b6f-4350-8ea9-8397daaa34e5",
+      "text": "laundry1"
+    }
+  ]
+}

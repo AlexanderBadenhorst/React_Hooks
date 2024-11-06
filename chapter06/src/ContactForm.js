@@ -78,7 +78,7 @@ function ContactForm() {
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           />
-          {emailError.length > 0 && <Alert variant="danger">{emailError}</Alert>}
+          {emailError.length < 8 && <Alert variant="danger">{emailError}</Alert>}
         </Form.Group>
 
         <Form.Group controlId="formBasicMessage">
